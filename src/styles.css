@@ -1,0 +1,122 @@
+:root {
+  color-scheme: light dark;
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(160deg, #f6f8ff, #eef1fb);
+  color: #1c2333;
+}
+
+.card {
+  width: min(440px, 92vw);
+  margin-top: 8vh;
+  background: #ffffff;
+  border: 1px solid #e3e7f2;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(30, 41, 82, 0.08);
+}
+
+h1 {
+  margin: 0 0 4px;
+  font-size: 1.5rem;
+}
+
+.sub {
+  margin: 0 0 20px;
+  color: #66708a;
+  font-size: 0.95rem;
+}
+
+label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 14px 0 4px;
+}
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d5daea;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button {
+  width: 100%;
+  margin-top: 18px;
+  padding: 11px;
+  border: none;
+  border-radius: 8px;
+  background: #4353ff;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button.secondary {
+  background: transparent;
+  color: #4353ff;
+  border: 1px solid #c9d0f5;
+}
+
+.error {
+  margin-top: 12px;
+  padding: 10px;
+  background: #fff1f2;
+  border: 1px solid #fecdd3;
+  color: #be123c;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.link-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px;
+  border: 1px solid #e3e7f2;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.public-link {
+  display: block;
+  margin-top: 12px;
+  padding: 14px;
+  border-radius: 10px;
+  background: #f1f4ff;
+  border: 1px solid #d7defc;
+  text-align: center;
+  color: #3641d8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.bio .public-link {
+  background: #4353ff;
+  color: white;
+  border-color: #4353ff;
+}
+
+.bio .public-link:hover {
+  opacity: 0.9;
+}
+
+.footer {
+  margin: 24px 0;
+  color: #98a1b8;
+  font-size: 0.8rem;
+}
